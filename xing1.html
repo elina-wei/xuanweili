@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #eecce5;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Kurssin sisälto viikottain 2019</div>
+<div id="panel">1.vk 43:HTML /CSS /jQuery<br>2.vk 44:jQuery<br>3.vk 45: Tietovarastot<br>4.vk 46:Node.js<br>
+5.vk 47 JSON<br>6.vk 48: Sulautetut järjestelmät<br>7.vk 49: Kurssiprojektin toteutus<br>
+8.vk 50 Kurssiprojektin toteutus<br>9.vk 51:Palaotukaet </div>
+<div id="flip">Arvostelun periaatteet<br>Tervetuloa Kurssille!</div>
+<div id="panel">Tuntitehtävät 40%<br>Projekti 60%</div>
+</body>
+</html> 
