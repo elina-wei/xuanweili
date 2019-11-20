@@ -1,0 +1,25 @@
+
+1.)  Olen k‰ytt‰nyt puhelinsovellusta joka paikantaa puhelimen ja n‰ytt‰‰ kartalla miss‰ olen ja kuinka liikun.
+     J‰rjestelm‰ ker‰‰ gps dataa ja piirt‰‰ liikkumiseni karttapohjalle.
+
+2.) Otan valokuvia puhelimen kameralla ja esim. google yhdist‰‰ kuvan karttaan. Paikannustieto ker‰‰ tietoa miss‰ liikun.
+
+3.) Maksan pankkikortilla ostokseni, kauppa tallentaa ostokseni ja lis‰‰ ne aiemmin tallennettuihin tietoihin. 
+    Kauppa seuraa mit‰ ostan ja kuinka paljon ja usein ja n‰in pystyy ennakoimaan tuotteiden menekkej‰.
+
+	Tietovaraston tietoturva 
+
+	Tietovaraston tietoturvalla tarkoitetaan sit‰ ett‰ tietoja ei p‰‰se kukaan ulkopuolinen lukemaan tai k‰sittelem‰‰n.
+
+	Tietovaraston suorituskyky
+
+	Suorituskyvyll‰ tarkoitetaan sit‰ kuinka paljon ja kuinka nopeasti pystyt‰‰n saatuja tietoja 	k‰sittelem‰‰n.
+
+	Tietovaraston eheys
+
+	Eheydell‰ tarkoitetaan kuinka tiedot ehjin‰ ja t‰ydellisin‰.
+
+	Tietovaraston pysyvyys
+
+	Pysyvyydell‰ tarkoitetaan tietojen s‰ilyvyytt‰ ja ajantasalla oloa.
+
