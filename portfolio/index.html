@@ -1,55 +1,151 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            Tyylitiedostoharjoituksia
-        </title>
-        <link rel="stylesheet" type="text/css" href="tyyli2.css">
-        <script src="aivot.js"></script>
-    </head>
-    <body>
-        <button type="button" onclick="laatikkoFunktio(1)" class="muutosNappi">Muuta 1. laatikon sisältöä.</button>
-        <button type="button" onclick="laatikkoFunktio(2)" class="muutosNappi">Muuta 2. laatikon sisältöä.</button>
-        <button type="button" onclick="laatikkoFunktio(3)" class="muutosNappi">Muuta 3. laatikon sisältöä.</button>
-        <button type="button" onclick="laatikkoFunktio(4)" class="muutosNappi">palauta.</button>
-        <img src="smiley1.png" height="100px" width="100px">
-        <div class="alusta1">
-            <div class="alusta2" id="laatikko1">
-                <h1 class="originalOtsikko1">Hello World!</h1>
-                <p>Lorem ipsum jne.</p>
-            </div>
+<head>
+<meta charset="utf-8">
+<title>xuanweili</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-            <div class="alusta3" id="laatikko2">
-                <h1 class="originalOtsikko2">Hei maailma!</h1>
-                <p>Lorem ipsum jne</p>
-            </div>
-            
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
 
-            <div class="kategoriat" id="laatikko3">
-                <h2 class="originalOtsikko3">Kategoriat</h2>
-                <ul>
-                    <li><a href="">kategoria 1</a></li>
-                    <li><a href="">kategoria 2</a></li>
-                    <li><a href="">kategoria 3</a></li>
-                    <li><a href="">kategoria 4</a></li>
-                </ul>
-            </div>
-            <div>
-                    <form id="yhteystietolomake">
-                        Nimi: <input type="text" name="Nimi" value=""><br>
-                        Email: <input type="email" name="Email" value=""><br>
-                        Puh: <input type="number" name="Puh" value=""><br><br>
-                    </form> 
-                    <button onclick="yhteystietoFunktio()">Tulosta</button>
-            </div>
-            <div id="yhteystiedotTuloste">
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
 
-            </div>
-            <div>                    
-                <button onclick="diagrammiFunktio()">Tee diagrammi</button><br>                    
-                <canvas id="myCanvas" width="700" height="500" style="border:0px solid black;"></canvas>            
-                </div>
-         </div>
-    </body>
+.header h1 {
+  font-size: 50px;
+}
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color:#580000
+}
+
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>Hello!  Olen xuanweili</h1>
+  <p>Olen kinalainen ja olen oppiskelelut Tieto- ja viestintäteknologia (TVT) tai tieto- ja viestintätekniikka Variassa</p>
+  <p>information and communications technology/信息及通信技术或資訊通信技術</p>
+</div>
+<div class="topnav">
+    <a href="index.html">index</a>
+    <a href="Sulautetut.html">Sulautetut </a>
+    <a href="raspberry.html">raspberry </a>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Tietokone raketaminen ja asentaminen</h2>
+      <div class="fakeimg" style="height:200px;"><img src="kuva/h5.jpg" style="height:250px; width:400px;" >kuva
+
+        <img src="kuva/s1.jpg" style="height:250px; width:400px;" >kuva</div>
+        <p>Astro Pi: Your Code in Space</p>
+        
+    </div>
+    <div class="card">
+      <h2>Sense HAT – Raspberry Pi</h2>
+      <h5>26,11,2019</h5>
+      <div class="fakeimg" style="height:200px;"><img src="kuva/h2.jpg" style="height:250px; width:400px;" >kuva
+
+      <img src="kuva/astro pi3.jpg" style="height:250px; width:400px;" >kuva</div>
+      <p>Launching the Astro Pi computers, and consequently the successful implementation and completion of this competition is subject to nominal progress through the ESA integration programme and operations on-board the ISS.
+        The organisations involved in the Astro Pi competition include the UK Space Agency, UKspace, Raspberry Pi, ESERO-UK and ESA.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+        <h3>popular articles</h3>
+          <h4>https://www.deviceplus.com/how-tos/raspberrypi-guide/raspberry-pi-sense-hat-led/</h4>
+        <h3>https://www.raspberrypi.org/blog/astro-pi/</h3>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
 </html>
