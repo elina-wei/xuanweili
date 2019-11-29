@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>xuanweili</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color:#580000
+}
+
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Astro Pi</h1>
+  <p>The Sense HAT Add-On Board For Raspberry Pi – Operating The LED Display</p>
+</div>
+<div class="topnav">
+    <a href="Javascript.html">Javascript</a>
+    <a href="Sulautetut.html">Sulautetut </a>
+    <a href="ohjelmonti.html" >ohjelmonti </a>
+    <a href="ohjelma.html">ohjelma</a>
+    <a href="raspberry.html">raspberry </a>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>This is the Sense HAT, an add-on board for Raspberry Pi,that can presumably be used in outer space!</h2>
+      <h5>26,11,2019</h5>
+      <div class="fakeimg" style="height:200px;"><img src="kuva/Astro pi.jpg" style="height:250px; width:400px;" >kuva
+
+      <img src="kuva/astro pi1.jpg" style="height:250px; width:400px;" >kuva</div>
+        <p>Astro Pi: Your Code in Space</p>
+        <p>This is the Sense HAT, an add-on board for Raspberry Pi!  saw it on   It was developed for the Astro Pi project so it’s full of interesting features that can presumably be used in outer space!</p>
+        <p>ESERO-UK and Raspberry Pi are developing a comprehensive suite of teaching resources to link to the curriculum and assist teachers of STEM subjects in engaging their students in the competition.  As well as explaining how to use and write code for the Astro Pi and its sensors, the resources will provide a context for the Astro Pi in the curriculum and link to teaching subjects and areas.</p>
+        <p>The UKspace team, led by SSTL, include Airbus DS, CGI, the Space KTN, National Nuclear Laboratory and National Physical Laboratory.</p>
+    </div>
+    <div class="card">
+      <h2>Sense HAT – Raspberry Pi</h2>
+      <h5>26,11,2019</h5>
+      <div class="fakeimg" style="height:200px;"><img src="kuva/astro pi2.jpg" style="height:250px; width:400px;" >kuva
+
+      <img src="kuva/astro pi3.jpg" style="height:250px; width:400px;" >kuva</div>
+      <p>The Sense HAT is an add-on board for Raspberry Pi, made especially for the Astro Pi mission – it’s going to the International Space Station in December 2015 – and is now available to buy</p>
+      <p>The Sense HAT has an 8×8 RGB LED matrix, a five-button joystick and includes the following sensors:  Gyroscope,Accelerometer,Magnetometer,Temperature,Barometric pressure,Humidity</p>
+      <p>Launching the Astro Pi computers, and consequently the successful implementation and completion of this competition is subject to nominal progress through the ESA integration programme and operations on-board the ISS.
+
+The organisations involved in the Astro Pi competition include the UK Space Agency, UKspace, Raspberry Pi, ESERO-UK and ESA.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+        <h3>popular articles</h3>
+          <h4>https://www.deviceplus.com/how-tos/raspberrypi-guide/raspberry-pi-sense-hat-led/</h4>
+        <h3>https://www.raspberrypi.org/blog/astro-pi/</h3>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,65 +1,173 @@
+<!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-   <title>XUANWEI LI</title>
-  </head>
-    <body>
+<head>
+<meta charset="utf-8">
+<title>xuanweili</title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-       <div class="header">
-        <h1>XUANWEI LI</h1>
-           <p>Elaima Suomessä</p>
-       </div>
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
 
-       <div class="topnav">
-         <a href="Javascript.html">Javascript</a>
-         <a href=Sulautetut.html>Sulautetut </a>
-         <a href=ohjelmonti.html >ohjelmonti.html </a>
-         <a href=https://www.youtube.com/watch?v=hKm6q0yFFaA>
-         MUSIKKI</a>
-         <a href=https://musakoulu.net/ >HARRASTUKSET </a>
-       </div>
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
 
-       <div class="row">
-       <div class="leftcolumn">
-       <div class="card">
-         <h2> toteutettu projekti實施項目</h2>
-         <h5>päivitetty 19.10.2019 </h5>
-       <div class="fakeimg" style="height:200px;"><img src="花样溜冰1.jpg" style="height:250px; width:400px;" >kuva
-      
-       <img src="花样溜冰1.jpg" style="height:250px; width:400px;" >kuva</div>
-      
-         <p>Suomen mestaruus suuri täyttymys KuPS-kapteeni Pennaselle – "Ylpeä ja onnellinen" </p>
-         <p>KuPS-kapteeni Petteri Pennanen juhli Turussa ensimmäistä jalkapallon Suomen mestaruuttaan. </p>
-       </div>
-       <div class="card">
-          <h2>Mitä tänään tapahtui?</h2>
-          <h5>päivitetty 19.10.2019 </h5>
-       <div class="fakeimg" style="height:200px;">kuva</div>
-            <p>Britannian pääministeri Boris Johnson kuvattuna Brexit-istunnossa Lontoon parlamenttitalossa 19. lokakuuta. </p>
-            <p> Britannian parlamentin oli määrä äänestää tänään neljännen kerran brexit-sopimuksesta. EU ja Britannian hallitus pääsivät sopuun uudesta erosopimuksesta torstaina</p>
-       </div>
-       </div>
-       <div class="rightcolumn">
-       <div class="card">
-            <h2>Suppilovahvero</h2>
-        <div class="fakeimg" style="height:100px;"><img src="suppilovahvero.jpg" style="height:200px;" width: 100%;>kuva</div>
-            <p>Suppilovahvero on kooltaan pienikokoinen ja muodoltaan torvimainen. Sienestäjän on usein etsittävä sitä sammaleen seasta. Onneksi se kasvaa ryhmissä ja usein suurena joukkona.</p>
-        </div>
+.header h1 {
+  font-size: 50px;
+}
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color:#580000
+}
+
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 文章卡片效果 */
+.card {
+  background-color:
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="header">
+      <h1>sulautetunjärjestelmän perusteet </h1>
+      <p>Sulautetutjärjestelmät osio ICT:n perusopinnoista opiskellaan käyttäen Arduino starter kittiä. Tarkoituksena on oppia sulautetunjärjestelmän perusrakenne ja oppia tekemään yksinkertaisia sulautettuja sovelluksia.
+        基礎ICT研究的嵌入式系統部分使用Arduino入門套件進行了研究。 目的是學習嵌入式系統的基本體系結構，並學習如何製作簡單的嵌入式應用程序。</p>
+  </div>
+
+  <div class="topnav">
+      <a href="Javascript.html">Javascript</a>
+      <a href="Sulautetut.html">Sulautetut </a>
+      <a href="ohjelmonti.html" >ohjelmonti </a>
+      <a href="ohjelma.html">ohjelma</a>
+      <a href="raspberry.html">raspberry </a>
+  </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>C-kielen perusteet arduino (Thinker Cad emulaattorilla)</h2
+      <div class="fakeimg" style="height:200px;"><img src="kuva/s2.jpg" style="height:250px; width:400px;" ><img src="kuva/s3.jpg" style="height:250px; width:400px;" ></div>
+
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
         <div class="card">
-             <h3>Suosittuja kuva</h3>
-        <div class="fakeimg"><p>kuva</p></div>
-        <div class="fakeimg"><p>kuva</p></div>
-        <div class="fakeimg"><p>kuva</p></div>
-        </div>
-         <div class="card">
-             <h3>Suosittuja artikkeleita</h3>
-            <p>Pohjois-Suomessa voi sunnuntaina olla mukava ulkoilusää, jopa aurinko voi pilkistellä.</p>
-        </div>
-        </div>
-        </div>
+          <h2>luodaan TinkerCad tilit, jotta voidaan opiskella ja simuloida arduino ohjelmointia ja kytkentöjä.</h2
+          <div class="fakeimg" style="height:200px;"><img src="kuva/s17.jpg" style="height:250px; width:400px;" ><img src="kuva/s5.jpg" style="height:250px; width:400px;" ></div>
 
-        <div class="footer">
-            <h2>Kysy lisää! Palaamme asiaan mahdollisimman pian.</h2>
         </div>
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="card">
+              <h2>4. Lämpömittari TMP36 sensorilla ja LCD näytöllä.</h2
+              <div class="fakeimg" style="height:200px;"><img src="kuva/s12.jpg" style="height:250px; width:400px;" ><img src="kuva/s13.jpg" style="height:250px; width:400px;" ></div>
 
-    </body>
+            </div>
+    <div class="card">
+      <h2>luodaan </h2>
+
+    
+
+    </div>
+    </div>
+
+      <div class="card">
+        <h3>Suosittuja kuva</h3>
+        <div class="fakeimg"><p>kuva</p></div>
+        <div class="fakeimg"><p>kuva</p></div>
+        <div class="fakeimg"><p>kuva</p></div>
+      </div>
+      <div class="card">
+        <h3>Suosittuja artikkeleita</h3>
+        <p>Pohjois-Suomessa voi sunnuntaina olla mukava ulkoilusää, jopa aurinko voi pilkistellä.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Kysy lisää! Palaamme asiaan mahdollisimman pian.</h2>
+  </div>
+
+  </body>
 </html>
