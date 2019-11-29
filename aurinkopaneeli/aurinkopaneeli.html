@@ -8,21 +8,60 @@
             function haeTiedostosta(){
                 $.ajax({
                 type: "GET",
-                url: "http://localhost:3000/arvot",
+                url: "http://paneelipalvelin.azurewebsites.net/arvot",
                 cache: false,
                 success: function(data){
-                    $("#testi").html(data);
+                    $("#testi").html(arrayData[0]);
+                    var c = document.getElementById("myCanvas");
+                    var arvoArray;
+                    var arvopituus;
+                    var piste=40;
+                    var diagrammi = c.getContext("2d");
+                    arvoArray = data.split(":");
+
+                    arvopituus= arvoArray.length;
+                    
+                    diagrammi.beginpath();
+                    diagrammi.strokestyle="blue";
+                    
+                    diagrammi.moveTo(piste, 400-(200+(arvoArray[0]*5)));
+                    diagrammi.fillText(arvoArray[0],piste, 400-(200+(arvoArray[0]*5)));
+
+                   for (i = 1;i < arvopituus; i++) {
+                       piste=piste+20;
+                       diagrammi.lineTo(piste, 400-(200+(arvoArray[1]*5)));
+                       diagrammi.fillText(arvoArray[1],piste, 400-(200+(arvoArray[1]*5)));
+
+                   }
+                   diagrammi.stroke();
+
+                   diagrammi.fillText("-30",0,350);
+                   diagrammi.fillText("-20",0,300);
+                   diagrammi.fillText("-10",0,250);
+                   diagrammi.fillText("0",0,200);
+                   diagrammi.fillText("10",0,150);
+                   diagrammi.fillText("20",0,100);
+                   diagrammi.fillText("30",0,50);
+
+                   diagrammi.fillText("5,8",120,400);
+                   diagrammi.fillText("10,8",220,400);
+                   diagrammi.fillText("15,8",320,400);
+                   diagrammi.fillText("20,8",420,400);
+                   diagrammi.fillText("25,8",520,400);
+                   diagrammi.fillText("30,8",620,400);
+
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown){
                     console.log("error");
                 }
             });
             }
- </script>
- </head>
- <body>
-    <button onclick="haeTiedostosta()">Hae</button>
-    <p id="testi">
-    </p>
-</body>
+        </script>
+    </head>
+   <body>
+     <button onclick="haeTiedostosta()">Hae</button>
+     <p id="testi">
+     </p>
+     <canvas id="myCanvas" width="700" height="400" style="border:0px solid black;"></canvas>
+  </body>
 </html>

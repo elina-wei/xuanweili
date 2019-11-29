@@ -1,75 +1,55 @@
+<!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-   <title>XUANWEI LI</title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Tyylitiedostoharjoituksia
+        </title>
+        <link rel="stylesheet" type="text/css" href="tyyli2.css">
+        <script src="aivot.js"></script>
+    </head>
     <body>
+        <button type="button" onclick="laatikkoFunktio(1)" class="muutosNappi">Muuta 1. laatikon sisältöä.</button>
+        <button type="button" onclick="laatikkoFunktio(2)" class="muutosNappi">Muuta 2. laatikon sisältöä.</button>
+        <button type="button" onclick="laatikkoFunktio(3)" class="muutosNappi">Muuta 3. laatikon sisältöä.</button>
+        <button type="button" onclick="laatikkoFunktio(4)" class="muutosNappi">palauta.</button>
+        <img src="smiley1.png" height="100px" width="100px">
+        <div class="alusta1">
+            <div class="alusta2" id="laatikko1">
+                <h1 class="originalOtsikko1">Hello World!</h1>
+                <p>Lorem ipsum jne.</p>
+            </div>
 
-       <div class="header">
-        <h1>XUANWEI LI</h1>
-           <p>Oppin Suomessä</p>
-       </div>
+            <div class="alusta3" id="laatikko2">
+                <h1 class="originalOtsikko2">Hei maailma!</h1>
+                <p>Lorem ipsum jne</p>
+            </div>
+            
 
-       <div class="topnav">
-         <a href="Javascript.html">Javascript</a>
-         <a href=Sulautetut.html>Sulautetut </a>
-         <a href=ohjelmonti.html >ohjelmonti.html </a>
-         <a href=https://www.youtube.com/watch?v=hKm6q0yFFaA>
-         MUSIKKI</a>
-         <a href=https://musakoulu.net/ >HARRASTUKSET </a>
-       </div>
+            <div class="kategoriat" id="laatikko3">
+                <h2 class="originalOtsikko3">Kategoriat</h2>
+                <ul>
+                    <li><a href="">kategoria 1</a></li>
+                    <li><a href="">kategoria 2</a></li>
+                    <li><a href="">kategoria 3</a></li>
+                    <li><a href="">kategoria 4</a></li>
+                </ul>
+            </div>
+            <div>
+                    <form id="yhteystietolomake">
+                        Nimi: <input type="text" name="Nimi" value=""><br>
+                        Email: <input type="email" name="Email" value=""><br>
+                        Puh: <input type="number" name="Puh" value=""><br><br>
+                    </form> 
+                    <button onclick="yhteystietoFunktio()">Tulosta</button>
+            </div>
+            <div id="yhteystiedotTuloste">
 
-       <div class="row">
-       <div class="leftcolumn">
-       <div class="card">
-         <h2> toteutettu projekti實施項目</h2>
-         <h5>päivitetty 19.10.2019 </h5>
-       <div class="fakeimg" style="height:200px;"><img src="kuva/h1.jpg" style="height:250px; width:400px;" >kuva
-      
-       <img src="kuva/s1.jpg" style="height:250px; width:400px;" >kuva</div>
-      
-         <p>Suomen mestaruus suuri täyttymys KuPS-kapteeni Pennaselle – "Ylpeä ja onnellinen" </p>
-         <p>KuPS-kapteeni Petteri Pennanen juhli Turussa ensimmäistä jalkapallon Suomen mestaruuttaan. </p>
-       </div>
-       <div class="card">
-          <h2>Mitä tänään tapahtui?</h2>
-          <h5>päivitetty 19.10.2019 </h5>
-       <div class="fakeimg" style="height:200px;">kuva</div>
-            <p>Britannian pääministeri Boris Johnson kuvattuna Brexit-istunnossa Lontoon parlamenttitalossa 19. lokakuuta. </p>
-            <p> Britannian parlamentin oli määrä äänestää tänään neljännen kerran brexit-sopimuksesta. EU ja Britannian hallitus pääsivät sopuun uudesta erosopimuksesta torstaina</p>
-       </div>
-       </div>
-       <div class="rightcolumn">
-       <div class="card">
-            <h2>Suppilovahvero</h2>
-        <div class="fakeimg" style="height:100px;"><img src="suppilovahvero.jpg" style="height:200px;" width: 100%;>kuva</div>
-            <p>Suppilovahvero on kooltaan pienikokoinen ja muodoltaan torvimainen. Sienestäjän on usein etsittävä sitä sammaleen seasta. Onneksi se kasvaa ryhmissä ja usein suurena joukkona.</p>
-        </div>
-        <div class="card">
-             <h3>Suosittuja kuva</h3>
-        <div class="fakeimg"><p>kuva</p></div>
-        <div class="fakeimg"><p>kuva</p></div>
-        <div class="fakeimg"><p>kuva</p></div>
-        </div>
-         <div class="card">
-             <h3>Suosittuja artikkeleita</h3>
-            <p>Pohjois-Suomessa voi sunnuntaina olla mukava ulkoilusää, jopa aurinko voi pilkistellä.</p>
-        </div>
-        </div>
-        </div>
-        <div>
-            <form id="yhteystietolomake">
-                Nimi: <input type="text" name="Nimi" value=""><br>
-                Email: <input type="email" name="Email" value=""><br>
-                Puh: <input type="number" name="Puh" value=""><br><br>
-            </form> 
-            <button onclick="yhteystietoFunktio()">Tulosta</button>
-    </div>
-    <div id="yhteystiedotTuloste">
-
-    </div>
-        <div class="footer">
-            <h2>Kysy lisää! Palaamme asiaan mahdollisimman pian.</h2>
-        </div>
-
+            </div>
+            <div>                    
+                <button onclick="diagrammiFunktio()">Tee diagrammi</button><br>                    
+                <canvas id="myCanvas" width="700" height="500" style="border:0px solid black;"></canvas>            
+                </div>
+         </div>
     </body>
 </html>

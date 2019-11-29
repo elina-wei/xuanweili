@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
+<head>
 <meta charset="utf-8">
-<title>XUANWEI LI</title>
+<title>xuanweili</title>
 <style>
 * {
   box-sizing: border-box;
@@ -45,30 +47,44 @@ body {
   color: black;
 }
 
-/* 创建三个相等的列 */
-.column {
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
   float: left;
-  width: 33.33%;
+  width: 75%;
 }
 
-/* 列后清除浮动 */
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 列后面清除浮动 */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* 底部 */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-/* 响应式布局 - 小于 600 px 时改为上下布局 */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
+
+
+
 /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
@@ -84,29 +100,23 @@ body {
     width: 100%;
   }
 }
-/* 图像部分 */
-.fakeimg {
-  background-color:
-  width: 100%;
-  padding: 20px;
-}
-  </style>
-  </head>
-  <body>
+</style>
+</head>
+<body>
 
-    <div class="header">
-        <h1>sulautetunjärjestelmän perusteet </h1>
-        <p>Sulautetutjärjestelmät osio ICT:n perusopinnoista opiskellaan käyttäen Arduino starter kittiä. Tarkoituksena on oppia sulautetunjärjestelmän perusrakenne ja oppia tekemään yksinkertaisia sulautettuja sovelluksia.
-          基礎ICT研究的嵌入式系統部分使用Arduino入門套件進行了研究。 目的是學習嵌入式系統的基本體系結構，並學習如何製作簡單的嵌入式應用程序。</p>
-    </div>
+<div class="header">
+  <h1>sulautetunjärjestelmän perusteet</h1>
+  <p>Sulautetutjärjestelmät osio ICT:n perusopinnoista opiskellaan käyttäen Arduino starter kittiä. Tarkoituksena on oppia sulautetunjärjestelmän perusrakenne ja oppia tekemään yksinkertaisia sulautettuja sovelluksia.
+      基礎ICT研究的嵌入式系統部分使用Arduino入門套件進行了研究。 目的是學習嵌入式系統的基本體系結構，並學習如何製作簡單的嵌入式應用程序。</p>
+</div>
+<div class="topnav">
+    <a href="Javascript.html">Javascript</a>
+    <a href="Sulautetut.html">Sulautetut </a>
+    <a href="ohjelmonti.html" >ohjelmonti </a>
+    <a href="ohjelma.html">ohjelma</a>
+    <a href="raspberry.html">raspberry </a>
+</div>
 
-    <div class="topnav">
-        <a href="Javascript.html">Javascript</a>
-        <a href=Sulautetut.html>Sulautetut </a>
-        <a href=ohjelmonti.html >ohjelmonti </a>
-        <a href=ohjelma.html>ohjelma</a>
-        <a href=raspberry.html/ >raspberry </a>
-    </div>
 
     <div class="row">
     <div class="column">
